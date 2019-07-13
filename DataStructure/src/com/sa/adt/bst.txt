@@ -1,0 +1,38 @@
+Binary search:
+
+Definition:
+
+Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
+
+Advantages:
+ 
+                       1. It is faster than linear search.
+
+                       2. It is astounding for large numbers.
+
+Disadvantages:
+           
+
+    Binary search can interact poorly with the memory hierarchy (i.e. caching), because of its random-access nature.
+    Before searching the elements shorting is necessary.It take some additional overhead to machine.
+
+Analysis of the Binary sort:
+
+    Worest case performance O(log n)
+    Best case performance O(1)
+    Average case performance O( log n)
+
+Algorithm steps:
+
+           
+      Step 1:   Read the elements of the list.
+
+      Step 2:   Sort the input list.
+
+      Step 3:   Find the mid value.
+
+      Step 4:   Look at the element in the middle. If the key is equal to that, the search is finished.
+
+      Step 5:   If the key is less than the middle element, do a binary search on the first half.
+
+      Step 6:   If it's greater, do a binary search of the second half
